@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBbcN9D04qRc1qMCSAq0m4n79HPoMEMUiM",
+            authDomain: "todo-app-with-firebase-e8f9d.firebaseapp.com",
+            databaseURL: "https://todo-app-with-firebase-e8f9d.firebaseio.com",
+            projectId: "todo-app-with-firebase-e8f9d",
+            storageBucket: "todo-app-with-firebase-e8f9d.appspot.com",
+            messagingSenderId: "221209593837"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body onload="show()">
+        <div id="title">
+                <h1>TodoList</h1>
+            </div>
+    
+            <div id="search">
+                <input type="text" placeholder="type text here!" id="item" class=" words">
+                <button id="press" onclick="addTodo()">submit</button>
+            </div>
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-2"></div>
+                <div id="main" class="col-lg-10 col-md-10 col-sm-10 col-10">
+                        
+                        <div id="nml">
+                            <ul id="list"></ul>
+                        </div>
+                    </div>
+            
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

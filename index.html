@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign In</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="boot1.css">
+</head>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBbcN9D04qRc1qMCSAq0m4n79HPoMEMUiM",
+        authDomain: "todo-app-with-firebase-e8f9d.firebaseapp.com",
+        databaseURL: "https://todo-app-with-firebase-e8f9d.firebaseio.com",
+        projectId: "todo-app-with-firebase-e8f9d",
+        storageBucket: "todo-app-with-firebase-e8f9d.appspot.com",
+        messagingSenderId: "221209593837"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<body>
+    <div id="login">
+        <h3 class="text-center text-white pt-5">Todo App</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div class="login-box col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Login</h3>
+                            <div class="form-group">
+                                <label for="email" class="text-info">Email:</label><br>
+                                <input type="text" name="email" id="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="password" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <br>
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit" onclick="signIn(event)">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a href="index2.html" class="text-info">Register here</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,58 @@
+body{
+        background-image: url(one.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+#title{
+    text-align: center;
+    margin-top: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    font-size: 35px;
+    font-style: oblique;
+    color: rgb(188, 234, 241); 
+    font-display: transparent;
+}
+#search{
+
+          text-align: center;
+}
+.words{
+        font-size: 25px;
+        border-radius: 10px;
+        border-width: 2px;
+        background-color: transparent;
+        padding: 0px 5px 0px 5px;
+        color:rgb(188, 234, 241);
+
+}
+#press{
+    font-size: 25px;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5px;
+    color: white;
+    background-color: rgb(91, 142, 150);
+    padding: 0px 12px;
+   
+}
+#bricks{
+    text-align: center;
+     
+}
+#list{
+    margin-top: 25px;
+    color: rgb(188, 234, 241);
+    font-size: 20px;
+
+}
+#list li{
+    list-style-type: none;
+    border: 2px groove #304b7a;
+    border-radius: 5px; 
+    padding: 1px 20px;
+    background-color: #26416f;
+    width: 75%;
+    margin-top: 1%;
+}
+
